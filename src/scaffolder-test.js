@@ -1,7 +1,10 @@
+import {assert} from 'chai';
 import scaffold from './scaffolder';
 
 suite('scaffolder', () => {
   test('that `is-website-vulnerable` is enabled', async () => {
-    await scaffold();
+    const {devDependencies} = await scaffold();
+
+    assert.deepEqual(devDependencies, ['is-website-vulnerable']);
   });
 });
