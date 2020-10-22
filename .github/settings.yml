@@ -1,0 +1,8 @@
+_extends: .github
+repository:
+  name: is-website-vulnerable
+  description: >-
+    opinionated scaffolder for testing web-based projects against
+    is-website-vulnerable
+  homepage: 'https://npm.im/@form8ion/is-website-vulnerable'
+  private: false
