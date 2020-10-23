@@ -49,7 +49,7 @@ import {scaffold} from '@form8ion/is-website-vulnerable';
 
 ```javascript
 (async () => {
-  await scaffold({projectRoot: process.cwd(), baseUrl: 'http://localhost:9876'});
+  await scaffold({baseUrl: 'http://localhost:9876'});
 })();
 ```
 
