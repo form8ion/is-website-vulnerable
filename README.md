@@ -15,6 +15,8 @@ opinionated scaffolder for testing web-based projects against
 * [Usage](#usage)
   * [Installation](#installation)
   * [Example](#example)
+    * [Import](#import)
+    * [Execute](#execute)
 * [Contributing](#contributing)
   * [Dependencies](#dependencies)
   * [Verification](#verification)
@@ -47,7 +49,7 @@ import {scaffold} from '@form8ion/is-website-vulnerable';
 
 ```javascript
 (async () => {
-  await scaffold({projectRoot: process.cwd()});
+  await scaffold({projectRoot: process.cwd(), baseUrl: 'http://localhost:9876'});
 })();
 ```
 
