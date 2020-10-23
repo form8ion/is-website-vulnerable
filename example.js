@@ -9,5 +9,5 @@ stubbedFs();
 // #### Execute
 
 (async () => {
-  await scaffold({projectRoot: process.cwd()});
+  await scaffold({baseUrl: 'http://localhost:9876'});
 })();
