@@ -1,6 +1,7 @@
 import {assert} from 'chai';
 import any from '@travi/any';
-import scaffold from './scaffolder';
+
+import scaffold from './scaffolder.js';
 
 suite('scaffolder', () => {
   test('that `is-website-vulnerable` is enabled', async () => {
