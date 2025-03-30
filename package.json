@@ -16,7 +16,7 @@
   "exports": "./lib/index.js",
   "sideEffects": false,
   "scripts": {
-    "test": "npm-run-all --print-label build --parallel lint:* --parallel test:*",
+    "test": "npm-run-all --print-label --parallel lint:* --parallel test:*",
     "lint:lockfile": "lockfile-lint",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "run-s lint:js -- --fix",
@@ -43,7 +43,8 @@
     "lint:peer": "npm ls >/dev/null",
     "prepare": "husky install",
     "lint:publish": "publint --strict",
-    "lint:engines": "ls-engines"
+    "lint:engines": "ls-engines",
+    "pretest": "run-s build"
   },
   "files": [
     "example.js",
