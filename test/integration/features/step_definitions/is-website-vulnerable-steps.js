@@ -1,5 +1,5 @@
 import {Then} from '@cucumber/cucumber';
-import {assert} from 'chai';
+import assert from 'node:assert';
 
 Then('is-website-vulnerable is enabled', async function () {
   const {dependencies: {javascript: {development}}, scripts} = this.results;
