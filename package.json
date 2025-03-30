@@ -42,7 +42,7 @@
     "test:unit:base": "DEBUG=any vitest run",
     "lint:peer": "npm ls >/dev/null",
     "prepare": "husky install",
-    "lint:publish": "publint",
+    "lint:publish": "publint --strict",
     "lint:engines": "ls-engines"
   },
   "files": [
