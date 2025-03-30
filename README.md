@@ -29,6 +29,7 @@ opinionated scaffolder for testing web-based projects against
 [![MIT license][license-badge]][license-link]
 [![npm][npm-badge]][npm-link]
 [![Try @form8ion/is-website-vulnerable on RunKit][runkit-badge]][runkit-link]
+![node][node-badge]
 
 <!--consumer-badges end -->
 
@@ -109,7 +110,7 @@ $ npm test
 
 [license-link]: LICENSE
 
-[license-badge]: https://img.shields.io/github/license/form8ion/is-website-vulnerable.svg
+[license-badge]: https://img.shields.io/github/license/form8ion/is-website-vulnerable.svg?logo=opensourceinitiative
 
 [npm-link]: https://www.npmjs.com/package/@form8ion/is-website-vulnerable
 
@@ -120,3 +121,5 @@ $ npm test
 [runkit-badge]: https://badge.runkitcdn.com/@form8ion/is-website-vulnerable.svg
 
 [slsa-badge]: https://slsa.dev/images/gh-badge-level2.svg
+
+[node-badge]: https://img.shields.io/node/v/@form8ion/is-website-vulnerable?logo=node.js
