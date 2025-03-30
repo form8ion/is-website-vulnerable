@@ -3,6 +3,7 @@
   "description": "opinionated scaffolder for testing web-based projects against is-website-vulnerable",
   "license": "MIT",
   "version": "0.0.0-semantically-released",
+  "type": "module",
   "engines": {
     "node": "^18.19.0 || ^20.9.0 || >=22.11.0"
   },
@@ -11,8 +12,8 @@
   "bugs": "https://github.com/form8ion/is-website-vulnerable/issues",
   "homepage": "https://npm.im/@form8ion/is-website-vulnerable",
   "runkitExampleFilename": "./example.js",
-  "main": "lib/index.cjs.js",
-  "module": "lib/index.es.js",
+  "main": "./lib/index.js",
+  "exports": "./lib/index.js",
   "sideEffects": false,
   "scripts": {
     "test": "npm-run-all --print-label build --parallel lint:* --parallel test:*",
@@ -23,10 +24,10 @@
     "generate:md": "remark . --output",
     "pregenerate:md": "run-s build",
     "lint:sensitive": "ban",
-    "pretest:integration": "preview",
+    "pretest:integration:base": "run-s build",
     "lint:gherkin": "gherkin-lint",
     "test:integration": "run-s 'test:integration:base -- --profile noWip'",
-    "test:integration:base": "NODE_OPTIONS=--enable-source-maps DEBUG=any cucumber-js test/integration --profile base",
+    "test:integration:base": "NODE_OPTIONS=--enable-source-maps DEBUG=any cucumber-js test/integration",
     "test:integration:debug": "DEBUG=test run-s test:integration",
     "test:integration:wip": "run-s 'test:integration:base -- --profile wip'",
     "test:integration:wip:debug": "DEBUG=test run-s 'test:integration:wip'",
@@ -53,9 +54,7 @@
     "provenance": true
   },
   "devDependencies": {
-    "@babel/register": "7.22.15",
     "@cucumber/cucumber": "10.0.1",
-    "@form8ion/babel-preset": "1.6.119",
     "@form8ion/commitlint-config": "1.0.65",
     "@form8ion/eslint-config": "7.0.7",
     "@form8ion/eslint-config-cucumber": "1.4.1",
@@ -72,7 +71,6 @@
     "ls-engines": "0.9.3",
     "mock-fs": "5.2.0",
     "npm-run-all2": "6.1.1",
-    "package-preview": "4.0.0",
     "publint": "0.2.6",
     "remark-cli": "12.0.0",
     "remark-toc": "9.0.0",
