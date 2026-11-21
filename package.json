@@ -56,7 +56,7 @@
   },
   "packageManager": "npm@11.21.3+sha512.e427fe8c4f9772d6e11ffce338ea970be8adcbb79e73f4e4938425dfcb5feb0fb586da76c183c7984e1cd51d44b370d8db6ec0735e3e48bae5609c2406271b4e",
   "devDependencies": {
-    "@cucumber/cucumber": "11.3.0",
+    "@cucumber/cucumber": "13.3.0",
     "@form8ion/commitlint-config": "3.0.3",
     "@form8ion/eslint-config": "7.0.18",
     "@form8ion/eslint-config-cucumber": "1.4.1",
